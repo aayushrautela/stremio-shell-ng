@@ -72,6 +72,7 @@ impl StremioServer {
             let server_path = path.clone().join(path::Path::new("server.js"));
             let child = Command::new(runtime_path)
                 .arg(server_path)
+                .env("NO_CORS", "1")
                 .creation_flags(CREATE_NO_WINDOW)
                 .stdout(Stdio::piped())
                 .stderr(Stdio::piped())
