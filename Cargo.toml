@@ -1,5 +1,5 @@
 [package]
-name = "stremio-shell-ng"
+name = "crispy"
 version = "5.0.16"
 edition = "2018"
 

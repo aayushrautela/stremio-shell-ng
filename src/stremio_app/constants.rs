@@ -1,5 +1,5 @@
-pub const APP_NAME: &str = "Stremio";
-pub const IPC_PATH: &str = "//./pipe/com.stremio5.";
+pub const APP_NAME: &str = "Crispy";
+pub const IPC_PATH: &str = "//./pipe/com.crispy.";
 pub const DEV_ENDPOINT: &str = "http://127.0.0.1:11470";
 pub const WEB_ENDPOINT: &str = "https://crispy.aayushcodes.eu/";
 pub const STA_ENDPOINT: &str = "https://staging.strem.io/";

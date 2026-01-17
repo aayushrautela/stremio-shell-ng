@@ -26,7 +26,7 @@ fn main() {
     </assembly>
     "#,
     );
-    res.set("FileDescription", "Freedom to Stream");
+    res.set("FileDescription", "Crispy");
     res.set("LegalCopyright", &copyright);
     res.set("OriginalFilename", &exe_name);
     res.set_icon_with_id("images/stremio.ico", "MAINICON");
