@@ -21,7 +21,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{DD3870DA-AF3C-4C73-B010-72944AB610C6}
+AppId={{7C4A8F11-93E4-4D71-AD11-B969AB5E1D2F}
 ArchitecturesAllowed=arm64
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
@@ -183,6 +183,12 @@ Root: HKA; Subkey: "Software\Classes\stremio"; ValueType: string; ValueName: "";
 Root: HKA; Subkey: "Software\Classes\stremio"; ValueType: string; ValueName: "URL Protocol"; ValueData: ""; Flags: uninsdeletekey
 Root: HKA; Subkey: "Software\Classes\stremio\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; Flags: uninsdeletekey
 Root: HKA; Subkey: "Software\Classes\stremio\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; Flags: uninsdeletekey
+
+; crispy: protocol
+Root: HKA; Subkey: "Software\Classes\crispy"; ValueType: string; ValueName: ""; ValueData: "URL:Crispy Protocol"; Flags: uninsdeletekey
+Root: HKA; Subkey: "Software\Classes\crispy"; ValueType: string; ValueName: "URL Protocol"; ValueData: ""; Flags: uninsdeletekey
+Root: HKA; Subkey: "Software\Classes\crispy\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; Flags: uninsdeletekey
+Root: HKA; Subkey: "Software\Classes\crispy\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; Flags: uninsdeletekey
 
 ; magnet: protocol
 Root: HKA; Subkey: "Software\Classes\magnet"; ValueType: string; ValueName: ""; ValueData: "URL:BitTorrent magnet"; Flags: uninsdeletekey
